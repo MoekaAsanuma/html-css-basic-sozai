@@ -29,5 +29,11 @@ p {
     font-family: "Arial", "Meiryo", sans-serif;
   }
   h1 {
-    font-family: Josefin Sans;
+    font-family: "Josefin Sans";
   }
+  h1 {
+    font-size: 40px;
+ }
+ h2 {
+  font-size: 20px;
+}
