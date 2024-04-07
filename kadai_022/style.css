@@ -26,7 +26,7 @@ h1 {
     display: flex;
     justify-content: space-between;
   }
-  .contents {
+  .content {
     border: 3px solid  rgb(238, 204, 204);
     flex-basis: 25%;
     padding: 10px 15px;
@@ -37,28 +37,30 @@ h1 {
     font-size: 25px;
     border-bottom: 3px dotted rgb(236, 122, 122);
    }
-   p:nth-of-type(3)::first-letter{
-    border-width:thick;
-    color: :rgb(97, 206, 249); 
+   
+  h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
   }
+  .content-item p:nth-of-type(2)::first-letter {
+   font-weight: bold;
+   color: rgb(97, 206, 249);
+  }
+  .content-item img {
+   margin: 10px 0px;
+   width: 220px;
+ }
+ .umbrella {
+  color: rgb(97, 206, 249); 
+  font-weight: bold;
+}
+
 img {
     margin:10px,0;
     width: 70%;
+    
   }
-   h2::before {
-     content: "●";
-     color: rgb(239, 111, 139);
-   }
-   .contents-item p:nth-of-type(2)::first-letter {
-    font-weight: bold;
-    color: rgb(97, 206, 249);
-    font-size: 20px;
-   }
-   .contents-item img {
-    margin: 10px 0px;
-    width: 220px;
-  }
-
+  
   footer {
     background-color: rgb(244, 79, 79);
     text-align: center;
