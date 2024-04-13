@@ -1,0 +1,35 @@
+#cases {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+#cases > ul {
+    display: flex;
+    list-style-type: none;
+  }
+#cases > ul > li {
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+  }
+.case-card {
+    background-color: #FFFFFF;
+    min-height: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .case-img {
+    width: 100%;
+  }
+  .case-info {
+    padding: 10px 20px 10px 20px;
+  }
+  .case-name {
+    color: #2710d5;
+    font-size: 19px;
+  }
+  .case-content {
+    font-size: 14px;
+  }
+
+
+
+
