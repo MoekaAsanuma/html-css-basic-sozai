@@ -1,65 +1,46 @@
-body{
- max-width: 375px;
- margin: 0px;
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
 }
-#nav-pc{
-display: none;
-}
-#menu-sp{
-   float: right;
-   padding: 0px;
-}
-#nav-sp{
-background-color: #ce933e;
-position: absolute;
-left: 0px;
-top: 0px;
-height: 100%;
-width: 100%;
-display: none;
-z-index: 100;
-}
-#close{
-position: absolute;
-top: 20px;
-right: 20px;
-}
+
 #logo-sp{
 margin: 80px,0px,30px,20px;
 }
-#nav-sp > a{
-display: block;
-}
-#nav-sp > a:link{
-color: #fff;
-}
-#nav-sp > a:visited{
-   color: #fff;
-}
-#nav-sp > a:hover{
-   color: #fff;
-   text-decoration: underline ;
-}
-#nav-sp > a:active{
-color: #fff;
-}
-#nav-sp > .menu{
-text-decoration: none;
-display: block;
-margin: 20px;
-height: 44px;
-font-size: 16px;
-background-image:url("images/arrow.png") ;
-background-repeat: no-repeat;
-background-position: right top;
-}
-@media screen and (max-width: 767px) {
+  /*================
+  PC用のスタイル
+  =================*/
+@media screen and (min-width: 767px) {
+   /* 横幅設定 */
    /* スマホ用nav */
-     #menu-sp {
-       display: none;
-     }
-     #nav-sp {
-       display: none;
-     }
-   }
-   
+   body {
+    min-width: 375px;
+    margin: 0 ;
+  }
+  #nav-sp{
+  display: none;
+  }
+  #menu-sp{
+    float:right;
+    padding: 0;
+  }
+  
+/*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+  
+  }
+  /*====================
+  スマートフォン用ナビゲーション	
+  =====================*/
+  #nav-sp{
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index:100;
+  }  

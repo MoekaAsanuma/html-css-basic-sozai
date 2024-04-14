@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
+   <body>
+   <!-- ヘッダー -->
+<header>
+   <!-- ロゴ -->
+   <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"></a>
+
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
 <!-- PC用ナビゲーション -->
+
 <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
-   <nav id="logo-sp">
-       <a href="index.html#concept">CONCEPT</a>
-   </nav>
-    <nav class="menu">
-       <a href="index.html#product">PRODUCT</a>
-    </nav>
-  <nav class="menu">
+   <nav id="nav-sp">
+   <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'"></nav>
+   <a id="logo-sp" href="index.html" onclick="getElementById('nav-sp').style.display = 'none'"></a>
+     <a href="index.html#concept">CONCEPT</a>
+     <a href="index.html#product">PRODUCT</a>
      <a href="index.html#contact">CONTACT</a>
   </nav>
+</header>
+
 <!-- スマホ用ナビゲーション -->
+<img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
    <nav id="nav-sp">
         <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
         <a id="logo-sp" href="index.html" onclick="getElementById('nav-sp').style.display = 'none'"></a>
@@ -24,5 +30,5 @@
       <a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'"></a>
       <a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'"></a>
       <a class="menu"  href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'"></a>
-   
    </nav>
+</body>
