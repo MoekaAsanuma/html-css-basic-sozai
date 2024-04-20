@@ -89,7 +89,7 @@ PC用のスタイル
   top: 0;
   height: 100%;
   width: 100%;
-  
+  display: none;
   z-index: 100;
 }
 #close{
