@@ -1,46 +1,98 @@
-/* ヘッダー */
-header {
-  display: flex;
-  justify-content: space-between;
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
 }
 
-#logo-sp{
-margin: 80px,0px,30px,20px;
+p {
+  font-size: 15px;
 }
-  /*================
-  PC用のスタイル
-  =================*/
-@media screen and (min-width: 767px) {
-   /* 横幅設定 */
-   /* スマホ用nav */
-   body {
-    min-width: 375px;
-    margin: 0 ;
+
+#main-visual>img {
+  width: 100%;
+}
+
+/*================
+PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
   }
-  #nav-sp{
-  display: none;
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    text-align: right;
+    font-size: 14px;
+    padding-top: 15px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc>a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  #nav-pc>a:link {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:visited {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+
+  #nav-pc>a:active {
+    color: #0d0d0d;
   }
   #menu-sp{
-    float:right;
-    padding: 0;
-  }
-  
-/*====================
-  スマートフォン用のスタイル
-  =====================*/
-  @media screen and (max-width: 767px) {
-  
-  }
-  /*====================
-  スマートフォン用ナビゲーション	
-  =====================*/
-  #nav-sp{
-    background-color: #ce933e;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
     display: none;
-    z-index:100;
-  }  
+  }
+}
+/*================
+スマホ用のスタイル 
+=================*/
+@media screen and (max-width: 767px) {
+  /* 横幅設定 */
+  body {
+    min-width: 375px;
+    margin: 0 
+  }
+  #nav-pc{
+    display: none;
+  }
+#menu-sp{
+ float: right;
+  padding: 0;
+}
+#nav-sp{
+ 
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#logo-sp{
+  margin: 80px,0px,30px,20px;
+}
+}
