@@ -91,9 +91,8 @@ PC用のスタイル
   width: 100%;
   display: none;
   z-index: 100;
-  text-align: left; /* テキストを左寄せ */
-  padding-left: 20px; /* 左側に余白を加える */
-
+  
+  
 }
 #close{
   position: absolute;
@@ -129,6 +128,8 @@ PC用のスタイル
   background-image:url("images/arrow.png");
   background-repeat:no-repeat;
   background-position:right top;
+  text-align: left; /* テキストを左寄せ */
+  padding-left: 20px; /* 左側に余白を加える */
   
   }
  
