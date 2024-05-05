@@ -17,16 +17,12 @@
     "勤労感謝の日"]
 console.log(holidays);
 
-
-
 let num = Math.floor(Math.random() * 16);
 
-
+// 変数numの値が0以外である間、変数numの値を出力し続ける
 while (num !== 0) {
     num = Math.floor(Math.random() * 16);
-  
-    // 次の条件式で比較される、変数numの現在の値を出力する
-    console.log('現在の値は' + num + 'です');
+    console.log(num);
   }
   
    // 1～16までの数値を順番に出力する
