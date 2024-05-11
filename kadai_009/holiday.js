@@ -17,17 +17,15 @@
     "勤労感謝の日"]
 console.log(holidays);
 
-let num = Math.floor(Math.random() * 16);
+for (let i = 0; i < holidays.length; i++) {
+  console.log(holidays[i]);
+}
 
-// 変数numの値が0以外である間、変数numの値を出力し続ける
-while (num !== 0) {
-    num = Math.floor(Math.random() * 16);
-    console.log(num);
-  }
-  
-   // 1～16までの数値を順番に出力する
-   for (const i of holidays) {
-    console.log(i);
-  }
-  
+let i = 0;
+while (i < holidays.length) {
+  console.log(holidays[i]);
+  i++;
+}
+
+   
   
